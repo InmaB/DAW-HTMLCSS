@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Inma Balbuena
+11/03/2022
+Html de Tarjetas de producto sobre hoteles de Malaga-->
+<html lang="ES">
+<head>
+  <title>Registro de Hoteles de Malaga</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Enlace para los iconos del formulario-->
+  <link rel="stylesheet" href="estilo/styleFormulario.css">
+</head>
+
+<body>
+
+  <!--Header-->
+  <header>
+    <h1>Los mejores hoteles de Málaga</h1>
+  </header>
+
+  <!--Contenedor-->
+  <div id="contenedor">
+
+    <!--Utilizamos el estilo de la tarjeta para introducir dentro el formulario-->
+    <div class="tarjeta">
+      <h2>Formulario de Registro</h2>
+      <h3>Regístrate para acceder a las mejores ofertas</h3>
+
+      <!--Formulario-->
+      <form action="/action_page.php">
+        <div class="formulario-contenido">
+          <i class="fa fa-user icono"></i>
+          <input class="campo" type="text" placeholder="Usuario" name="usrnm">
+        </div>
+
+        <div class="formulario-contenido">
+          <i class="fa fa-envelope icono"></i>
+          <input class="campo" type="text" placeholder="Email" name="email">
+        </div>
+
+        <div class="formulario-contenido">
+          <i class="fa fa-key icono"></i>
+          <input class="campo" type="password" placeholder="Contraseña" name="psw">
+        </div>
+
+        <button type="submit" class="boton">Registrarse</button>
+      </form>
+
+      <p class="ir">
+        <a href="index.html">Volver a la Principal</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!--Footer-->
+  <footer>Turismo de Málaga | Sede en Benalmádena Costa | Contacto: <a href="mailto:correo@correo.com">correo</a></footer>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*Inma Balbuena
+  16/02/2021
+  Proyecto Parallax, css*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #d8b384;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Menú */
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: #3fab9B;
+    z-index: 1;
+
+}
+
+nav a {
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    background-color: #CEE5D0;
+    color: #5e454b;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+     background-color: #f3f0d7;
+}
+
+/* Contenedor de Información */
+.contenedor1 {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    background-color:#f3f0d7;
+    color: #5e454b;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contenedor2 {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    background-color:#1f4872;
+    color:#ddd;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contenedor3 {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    background-color:#4a5f7a;
+    line-height: 1.5;
+}
+
+p:first-of-type::first-letter {
+  float: left;
+  font-size: 250%;
+  line-height: 50px;
+}
+
+/* Imágenes */
+.img1, .img2, .img3, .img4 {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:sepia(50%);
+}
+
+.img1 {
+    background-image: url("img/img1.jpg");
+    min-height: 70%;
+}
+
+.img2 {
+    background-image: url("img/img2.jpg");
+    min-height: 400px;
+}
+
+.img3 {
+    background-image: url("img/img3.jpg");
+    min-height: 400px;
+}
+
+.img4 {
+    background-image: url("img/img4.jpg");
+    min-height: 400px;
+}
+
+.textoimagen {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    color:#ddd;
+    font-size: 22px;
+}
+
+table img {
+    border: 8px solid white;
+}
+
+table a {
+    color:#ddd;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration:underline;
+}
+
+/* Encabezados */
+.textoimagen h1 {
+    color: #fff;
+    font-size: 8em;
+    font-weight: bold;
+    font-family: Helvetica;
+    letter-spacing: 25px;
+    text-transform:uppercase;
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:5em;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    text-shadow: black 6px 6px 6px;
+}
+
+h3 {
+    color: #3fab9B;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-left: 8px solid #2e2e2e;
+    border-right: 8px solid #2e2e2e;
+    background-color:#2e2e2e;
+    color: rgb(187, 187, 187);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px ;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

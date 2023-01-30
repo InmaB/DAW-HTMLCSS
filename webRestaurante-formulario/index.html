@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--Inma Balbuena
+01/05/2022
+Proyecto 5 Reservas para un restaurante con flexbox
+-->
+<html lang="ES">
+<head>
+  <title>Restaurante La postrería</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <!--Navegación-->
+  <div id="menu">
+    <ul>
+      <li class="listamenu"><a href="#inicio">Inicio</a></li>
+      <li class="listamenu"><a href="#somos">¿Quiénes somos?</a></li>
+      <li class="listamenu"><a href="#menucarta">Carta</a></li>
+      <li class="listamenu"><a href="#reserva">Reserva</a></li>
+      <li class="listamenu"><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!--Imagen de portada-->
+  <div class="portada"></div>
+  <div class="titulo">
+    <p id="inicio">La Postrería Restaurante</p>
+  </div>
+
+  <!--h1-->
+  <h1 id="somos">¿Quiénes somos?</h1>
+
+  <!--Div Contenido-->
+  <div class="contenido">
+
+    <!--Ficha 1-->
+    <div class="ficha">
+      <img src="img/pasteleros.jpg" alt="pasteleros">
+      <h2>Nosotros</h2>
+      <p>Somos un restaurante algo peculiar, ya que aquí podrás disfrutar de los mejores postres de la mayor calidad que hay en el mercado, incluídos postres sin lactosa y sin gluten para aquellos intolerantes, además tenemos en nuestra plantilla los mejores reposteros de la Costa del Sol.</p>
+    </div>
+
+    <!--Ficha 2-->
+    <div class="ficha">
+      <img src="img/postre.jpg" alt="especialidad">
+      <h2>Nuestra especialidad</h2>
+      <p>Un elegante postre sencillo y riquísimo, con una combinación de sabores que ¡os va a encantar! El postre esta compuesto por una mousse de Vainilla y Cardamomo acompañada con trozos de fresas que bañamos con una salsa de fresas especialidad de la casa, un postre simple y delicioso y con la mejor calidad.</p>
+    </div>
+
+    <!--Ficha 3-->
+    <div class="ficha">
+      <img src="img/tarta.jpg" alt="tarta">
+      <h2>También para diabéticos</h2>
+      <p>A parte de nuestros postres libres de lactosa y de gluten, también ofrecemos una carta especial para diabéticos, ya que, lo importante es que todos nuestros clientes puedan saborear nuestros productos y disfrutar del sabor único de nuestros postres. </p>
+    </div>
+  </div>
+
+  <!--h1-->
+  <h1 id="menucarta">Carta</h1>
+
+  <!--Div Contenido-->
+  <div class="contenido">
+
+    <!--Tabla-->
+    <table>
+
+      <!--Titulos tabla-->
+      <tr>
+        <th>Los postres</th>
+        <th>Información</th>
+        <th>Precio</th>
+        <th>Un vistazo...</th>
+      </tr>
+
+      <tr>
+        <td>Mousse de frutas del bosque</td>
+        <td><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>14.99 €</td>
+        <td><img class="imgtabla" src="img/frutabosque.jpg" alt="Frutas del bosque"></td>
+      </tr>
+
+      <tr>
+        <td>Soufflé de mango y coco</td>
+        <td><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>18.75 €</td>
+        <td><img class="imgtabla" src="img/coco.jpg" alt="Soufflé de mango y coco"></td>
+      </tr>
+
+      <tr>
+        <td>Pastel de zanahoria de la casa</td>
+        <td><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"></td>
+        <td>7.99 €</td>
+        <td><img class="imgtabla" src="img/zanahoria.jpg" alt="tarta de zanahoria"></td>
+      </tr>
+
+      <tr>
+        <td>Pastel de matcha</td>
+        <td><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>12.99 €</td>
+        <td><img class="imgtabla" src="img/matcha.jpg" alt="tarta de zanahoria"></td>
+      </tr>
+
+      <tr>
+        <td>Pastel de chocolate </td>
+        <td><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"></td>
+        <td>11.99 €</td>
+        <td><img class="imgtabla" src="img/pastelchoco.jpg" alt="tarta de chocolate"></td>
+      </tr>
+
+      <tr>
+        <td>Pastel de praliné y ganache</td>
+        <td><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"></td>
+        <td>17.99 €</td>
+        <td><img class="imgtabla" src="img/pranile.jpg" alt="pranile"></td>
+      </tr>
+
+      <tr>
+        <td>Blondie con sorbete de vainilla </td>
+        <td><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>13.50 €</td>
+        <td><img class="imgtabla" src="img/vainilla.jpg" alt="vainilla"></td>
+      </tr>
+
+      <tr>
+        <td>Cheesecake de la casa</td>
+        <td><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>12.55 €</td>
+        <td><img class="imgtabla" src="img/queso.jpg" alt="queso"></td>
+      </tr>
+
+      <tr>
+        <td>Tarta de limón con merengue XL</td>
+        <td><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>11.45 €</td>
+        <td><img class="imgtabla" src="img/limon.jpg" alt="limon"></td>
+      </tr>
+
+      <tr>
+        <td>Batidos y bebidas caseras</td>
+        <td><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+        <td>6.55 €</td>
+        <td><img class="imgtabla" src="img/batidos.jpg" alt="batidos"></td>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+
+          <!--Details + Summary + tabla-->
+          <details>
+            <summary>Más información</summary>
+            <!--Tabla dentro de Details-->
+            <table>
+              <tr>
+                <td>Libre de azúcar:<br><img class="imgicono" src="img/sin-azucar.png" alt="sin azucar"></td>
+                <td>Sin lactosa:<br><img class="imgicono" src="img/sin-lactosa.png" alt="sin lactosa"></td>
+                <td>Sin gluten:<br><img class="imgicono" src="img/gluten.png" alt="sin gluten"></td>
+              </tr>
+            </table>
+          </details>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--h1-->
+  <h1 id="reserva">Reserva</h1>
+  <!--Div Contenido-->
+  <div class="contenido">
+
+    <!--Formulario-->
+    <form>
+      <ul class="flex-outer">
+
+        <!--Nombre-->
+        <li>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Teclee su nombre">
+        </li>
+
+        <!--Apellido-->
+        <li>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Teclee su apellido">
+        </li>
+
+        <!--Email-->
+        <li>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Teclee su email">
+        </li>
+
+        <!--Telefono-->
+        <li>
+          <label for="tlfono">Teléfono</label>
+          <input type="tel" id="tlfono" placeholder="Teclee su telefono">
+        </li>
+
+        <!--Fecha-->
+        <li>
+          <label for="date">Fecha</label>
+          <input type="date" id="date" name="date" max="2023-12-31">
+        </li>
+
+        <!--Nº de Personas-->
+        <li>
+          <label for="menuPersonas">Nº de Personas</label>
+          <select name="menuPersonas" id="menuPersonas">
+            <option value="0">...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">Más de 10</option>
+          </select>
+        </li>
+
+        <!--Hora-->
+        <li>
+          <p>Hora</p>
+          <ul class="flex-inner">
+
+            <li>
+              <input type="checkbox" id="dos">
+              <label for="dos">14:00</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="dosmedia">
+              <label for="dosmedia">14:30</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="tres">
+              <label for="tres">15:00</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="tresmedia">
+              <label for="tresmedia">15:30</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="cuatro">
+              <label for="cuatro">16:00</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="cuatromedia">
+              <label for="cuatromedia">16:30</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="cinco">
+              <label for="cinco">17:00</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="cincomedia">
+              <label for="cincomedia">17:30</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="seis">
+              <label for="seis">18:00</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="seismedia">
+              <label for="seismedia">18:30</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="nueve">
+              <label for="nueve">21:00</label>
+
+            <li>
+              <input type="checkbox" id="nuevemedia">
+              <label for="nuevemedia">21:30</label>
+            </li>
+
+
+            <li>
+              <input type="checkbox" id="diez">
+              <label for="diez">22:00</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="diezmedia">
+              <label for="diezmedia">22:30</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="once">
+              <label for="once">23:00</label>
+            </li>
+
+          </ul>
+        </li>
+
+        <!--Cuadro de texto-->
+        <li>
+          <label for="mensaje">Mensaje</label>
+          <textarea rows="6" id="mensaje" placeholder="Si son más de 10 personas para la reserva indicar el número exacto aquí y señalen en nº de personas más de 10. Gracias"></textarea>
+        </li>
+
+        <li>
+          <button type="submit">Enviar</button>
+        </li>
+
+      </ul>
+    </form>
+  </div>
+
+  <!--Footer-->
+  <footer>
+
+    <!--Parrafo 1-->
+    <p>HORARIO:<br>
+      Todos los días<br>
+      De 14:00 a 19:00<br>
+      De 21:00 a 24:00<br>
+    </p>
+
+    <!--Parrafo 2-->
+    <p id="contacto">CONTACTO:<br>
+      C/ Inventada nº 11<br>
+      952.999.999 <br>
+      lapasteleria@email.com
+    </p>
+
+    <!--Parrafo 3-->
+    <p>PEDIDOS A DOMICILIO:<br>
+      Contacte con nosotros mediante teléfono
+    </p>
+  </footer>
+
+</body>
+</html>

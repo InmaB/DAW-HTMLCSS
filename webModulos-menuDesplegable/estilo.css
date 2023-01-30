@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC&family=Bebas+Neue&family=Dosis:wght@300&family=Exo+2:ital,wght@1,100&family=M+PLUS+1+Code:wght@100&family=M+PLUS+1:wght@100&family=Manrope:wght@300;400&family=Merriweather+Sans:wght@300&family=Pacifico&family=Petemoss&family=Poppins:wght@100;300&family=Praise&family=Rhodium+Libre&family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC&family=Bebas+Neue&family=Dosis:wght@300&family=Exo+2:ital,wght@1,100&family=M+PLUS+1+Code:wght@100&family=M+PLUS+1:wght@100&family=Manrope:wght@300;400&family=Merriweather+Sans:wght@300&family=Pacifico&family=Petemoss&family=Poppins:wght@100;300&family=Praise&family=Rhodium+Libre&family=Staatliches&family=Tomorrow:wght@500&display=swap');
+
+/*
+Inma Balbuena
+25/03/2022
+Descripción del ciclo DAW con elementos HTML5, css
+*/
+
+body {
+    color: #5d5e62;
+    background-color: #97DBAE;
+    font-family: Tahoma, sans-serif;
+}
+
+/* --- CONTENEDOR DONDE TENDRÁ TODOS LOS ELEMENTOS --- */
+div.contenedor {
+    margin: auto;
+    width: 80%;
+    background-color: #fbfcfd;
+}
+
+/* --- HEADER --- */
+header {
+    padding: 10px;
+    background-color: #C3E5AE;
+    font-family: Staatliches, sans-serif;
+}
+
+header>h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: #5d5e62 6px 6px 6px;
+    text-transform: uppercase;
+}
+
+/* --- MENU --- */
+nav {
+    overflow: hidden;
+    background-color: #deefed;
+    font-family: Tomorrow, sans-serif;
+}
+
+  /* Los links de navegación */
+nav a {
+    float: left;
+    padding: 14px 16px;
+    color: #5d5e62;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+  /* Subnavegación posición */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+  /* Botones */
+.subnav .subnavbtn {
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #5d5e62;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+  /* Hover del menú */
+nav a:hover, .subnav:hover .subnavbtn {
+    background-color: #93a7a6;
+}
+
+  /* Posicionamiento de la subnavegación */
+.subnav-contenido {
+    display: none;
+    position: absolute;
+    left: 10.3%;
+    width: 79.4%;
+    background-color: #93a7a6;
+    z-index: 1;
+}
+
+  /* Estilo de la subnavegacion */
+.subnav-contenido a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+  /* Hover de la subnavegación */
+.subnav-contenido a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+  /* Cuando se abre la subnavegacion posicionado */
+.subnav:hover .subnav-contenido {
+    display: block;
+}
+
+/* --- MAIN --- */
+main {
+    float: left;
+    background-color: #fbfcfd;
+    width: 77%;
+}
+
+  /* Secciones*/
+section {
+    margin: 15px;
+    width: 100%;
+    background-color: #deefed;
+    border: 3px solid #F1E1A6;
+    border-radius:5px 5px 0 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: #F1E1A6;
+    letter-spacing: 5px;
+    font-family: Staatliches, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+  /* Articulos */
+article {
+    margin: 15px;
+    width: 95%;
+    background-color: white;
+    border: #F4BBBB 3px solid;
+    border-radius:5px 5px 0 0;
+}
+
+article>h3 {
+    margin: 0px;
+    padding: 10px;
+    background-color: #F4BBBB;
+    color: #5d5e62;
+    letter-spacing: 5px;
+    font-family: Staatliches, sans-serif;
+    font-size: 20px;
+}
+
+article p, aside p {
+    padding: 10px;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+  /* Figure */
+figure {
+    float: right;
+}
+
+figure img{
+    width: 300px;
+    border-radius: 5px;
+}
+
+figcaption{
+    margin: 10px 0px;
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+}
+
+  /* Details */
+details {
+    width: 250px;
+    background-color: #97DBAE;
+    border-radius: 0 0 5px 0px;
+}
+
+details>p {
+    font-size: 11px;
+}
+
+summary {
+    padding: 5px;
+    font-family: Tomorrow, sans-serif;
+    font-size: 15px;
+}
+
+span {
+    font-weight: bold;
+}
+
+  /*Lista*/
+ul {
+    font-size: 15px;
+}
+
+li{
+    padding: 5px;
+}
+
+/* --- ASIDE --- */
+aside {
+    float: right;
+    width: 20%;
+    font-family: Tahoma, sans-serif;
+}
+
+aside h3 {
+    margin-right: 15px;
+    background-color: #C3E5AE;
+    font-family: Staatliches, sans-serif;
+    text-align: center;
+}
+
+aside p {
+    margin-right: 15px;
+}
+
+aside img {
+    display: block;
+    margin: 0px auto;
+    width: 150px;
+}
+
+aside a {
+    color: #628d70;
+    font-family: Tomorrow, sans-serif;
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: #97DBAE;
+    text-decoration: underline overline;
+}
+
+  /*Barra*/
+hr {
+    width: 90%;
+    height: 1px;
+    background-color: #C3E5AE;
+}
+
+  /* --- Lista Aside --- */
+ul.estilolista {
+    clear: both;
+    margin: 20px;
+    padding: 0;
+    width: 80%;
+    border: 1px solid #7C7C7C;
+    border-bottom: none;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    list-style: none;
+}
+
+ul.estilolista li {
+    padding: 10px;
+    border-bottom: 1px solid #7C7C7C;
+    border-top: 1px solid #FFF;
+    background: #F4F4F4;
+}
+
+/* --- FOOTER --- */
+footer {
+    clear: both;
+    display: flex;
+    flex-direction:row;
+    padding: 10px;
+    background-color: #628d70;
+    color: #eee;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p.piepagina {
+    margin: 15px;
+    padding: 5px;
+    width: 150px;
+    background-color: #97DBAE;
+    border-radius: 2px;
+    color: #628d70;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.piepagina a {
+    color: #628d70;
+}
+
+.piepagina a:hover {
+    color: #5d5e62;
+}
+

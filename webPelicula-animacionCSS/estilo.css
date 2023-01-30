@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC&family=Exo+2:ital,wght@1,100&family=M+PLUS+1+Code:wght@100&family=M+PLUS+1:wght@100&family=Merriweather+Sans:wght@300&family=Pacifico&family=Petemoss&family=Poppins:wght@100;300&family=Praise&family=Rhodium+Libre&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC&family=Bebas+Neue&family=Dosis:wght@300&family=Exo+2:ital,wght@1,100&family=Gowun+Dodum&family=IBM+Plex+Sans+Devanagari:wght@200&family=Inria+Sans:wght@300;400&family=M+PLUS+1+Code:wght@100&family=M+PLUS+1:wght@100&family=Manrope:wght@300;400&family=Merriweather+Sans:wght@300&family=Nova+Slim&family=Pacifico&family=Petemoss&family=Poppins:wght@100;300&family=Praise&family=Preahvihear&family=Rhodium+Libre&family=Snippet&family=Staatliches&family=Tomorrow:wght@500&display=swap');
+
+/* Inma Balbuena
+11/04/2022
+Proyecto Animaciones y máscaras con CSSTaller */
+
+
+/* --- BODY --- */
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    color: #777;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* --- IMAGENES DE FONDO DE LOS DIVS --- */
+.imagen1, .imagen2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagen1 {
+    background-image: url("img/portada.jpg");
+    min-height: 70%;
+}
+
+.imagen2 {
+    background-image: url("img/the-lost-city-portada.jpg");
+    min-height: 50%;
+}
+
+/* --- TÍTULO --- */
+.titulo {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+.titulo span {
+    padding: 30px;
+    border-radius: 50%;
+    background-color: rgb(109, 37, 37);
+    color: #fff;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* --- SECCIÓN --- */
+.contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px 80px;
+    color: #777;
+    background-color: white;
+
+}
+
+/* --- ESTILO ARTICULOS Y TÍTULOS H1, H2 --- */
+article {
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+    background-color: white;
+    border: 1px rgb(19, 186, 19) solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px;
+}
+
+article p {
+    padding: 10px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+    background-color: rgb(16, 158, 16);
+    border-radius: 15px;
+    color: white;
+    font-family: 'Abel', 'sans-serif';
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Estilo lista */
+ul {
+    list-style: none inside url("img/claqueta.png");
+}
+
+li {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+}
+
+li span {
+    font-weight: bold;
+}
+
+/* Details */
+details {
+    background-color: white;
+    border:0;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+}
+
+details>a {
+    color: rgb(16, 158, 16);
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+details>a:hover {
+    background-color: rgb(16, 158, 16);
+    color: white;
+
+}
+
+/* Imágenes del elenco */
+figure {
+    float: left;
+    margin: 10px;
+}
+
+figure img {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #777;
+}
+
+figcaption {
+    margin: 10px 0px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Efecto Gradiente */
+.efectomascara {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+
+/* Imagen cartelera con efecto máscara elipse*/
+.cartelera {
+    float: left;
+    padding: 10px;
+    border: 0;
+    -webkit-mask-image: radial-gradient(ellipse, black 70%, rgba(0, 0, 0, 0.5) 75%);
+    mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5));
+}
+
+/* --- EFECTO MOVIMIENTO "estreno en cines"---*/
+#efectomovimiento {
+    width: 175px;
+    height: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    animation: movimientoestreno 4s infinite;
+    animation-timing-function: ease-in;
+    text-align: center;
+
+}
+
+@keyframes movimientoestreno {
+    from {
+        left: 0px;
+        background-color: rgb(200, 255, 99);
+    }
+
+    to {
+        left: 70%;
+        background-color: rgb(246, 122, 255);
+    }
+}
+
+/*--- EFECTO ANIMACION CAMARA ---*/
+
+#camara {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    animation: movimientocamara 1.9s alternate infinite ease-in;
+
+  }
+
+  @keyframes movimientocamara {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: 40%;
+    }
+}
+
+/* Video */
+iframe {
+    margin: 5px;
+    width: 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border:0;
+}
+
+/* --- FOOTER ---*/
+footer {
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 18px;
+}
+
+footer > .piedepagina {
+    justify-content: center;
+    background-color: #111;
+    text-align: center;
+}
+
+.piedepagina > a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.piedepagina > a:hover {
+    background-color: antiquewhite;
+    color: #111;
+}
